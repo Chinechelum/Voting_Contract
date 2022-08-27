@@ -39,7 +39,7 @@ contract General_Elections {
     constructor(string[] memory candidates) {
         myMaker = msg.sender;
 
-        for (uint i = 1; i < candidates.length; i++) {
+        for (uint i = 0; i < candidates.length; i++) {
             Ballot.push(BallotEntry({
                 name: candidates[i],
                 voteCount: 0
